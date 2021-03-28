@@ -19,7 +19,7 @@ app.listen(port, () => { })
 
 const selectImages = require("./helpers")
 
-const prefix = "]"
+const prefix = "!"
 client.on('message', (msg) => {
   if (msg.author.bot) return
   if (!msg.content.startsWith(prefix)) return
