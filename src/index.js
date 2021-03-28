@@ -1,13 +1,15 @@
-/*  RESOURCES:
-    https://www.digitalocean.com/community/tutorials/how-to-build-a-discord-bot-with-node-js
-*/
 'use strict'
-require("dotenv").config()
+import fs from "fs"
+import dotenv from "dotenv"
+dotenv.config()
+import discord from "./utils/discord.js"
+const client = discord()
+import images from "./utils/image.js"
+const imageHelper = images()
+import express, { json } from 'express'
+import imgur from "./utils/imgur.js"
+const imgurHelper = imgur()
 
-const Discord = require("discord.js")
-const client = new Discord.Client()
-
-const express = require('express')
 const app = express()
 const port = 3000
 
@@ -17,10 +19,23 @@ app.get('/', (req, res) => {
 
 app.listen(port, () => { })
 
-const selectImages = require("./helpers")
+async function image(fileName) {
+  return new Promise(async (resolve, reject) => {
+    const path = await imageHelper.mergeImages(fileName)
+    setTimeout(async () => {
+      const file = await imageHelper.base64(path)
+      const url = await imgurHelper.upload(file)
+      //const url = "oi"
+      resolve({
+        url,
+        filePath: path
+      })
+    }, 500)
+  })
+}
 
 const prefix = "!"
-client.on('message', (msg) => {
+client.on('message', async (msg) => {
   if (msg.author.bot) return
   if (!msg.content.startsWith(prefix)) return
 
@@ -29,11 +44,15 @@ client.on('message', (msg) => {
   const command = args.shift().toLowerCase()
 
   if (command == "roll") {
-    const sendImages = selectImages()
-    sendImages.forEach((image) => {
-      msg.reply(image).catch((error) => console.error(error))
+    const messageId = msg.url.split('/')[6]
+    const { url, filePath } = await image(messageId)
+    console.log(url)
+    await msg.reply(url)
+    fs.unlink(filePath, (err) => {
+      if (err) {
+        console.error(err)
+        return
+      }
     })
   }
 })
-
-client.login(process.env.BOT_TOKEN)
