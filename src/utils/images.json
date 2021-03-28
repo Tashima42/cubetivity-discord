@@ -1,0 +1,58 @@
+{
+  "characters": [
+    "https://media.discordapp.net/attachments/825547866134806540/825560046045364294/1.png",
+    "https://media.discordapp.net/attachments/825547866134806540/825560047056453662/2.png",
+    "https://media.discordapp.net/attachments/825547866134806540/825560048208969786/3.png",
+    "https://media.discordapp.net/attachments/825547866134806540/825560049685364747/4.png",
+    "https://media.discordapp.net/attachments/825547866134806540/825560050919407636/5.png",
+    "https://media.discordapp.net/attachments/825547866134806540/825560052513505310/6.png"
+  ],
+  "settings": [
+    "https://media.discordapp.net/attachments/825547866134806540/825559986704744448/1.png?width=495&height=495",
+    "https://media.discordapp.net/attachments/825547866134806540/825559987736150016/2.png?width=495&height=495",
+    "https://media.discordapp.net/attachments/825547866134806540/825559989477310494/3.png?width=495&height=495",
+    "https://media.discordapp.net/attachments/825547866134806540/825559990688415764/4.png?width=495&height=495",
+    "https://media.discordapp.net/attachments/825547866134806540/825559991456366642/5.png?width=495&height=495",
+    "https://media.discordapp.net/attachments/825547866134806540/825559993927467028/6.png?width=495&height=495"
+  ],
+  "objects-1": [
+    "https://media.discordapp.net/attachments/825547866134806540/825557833977298954/1.png",
+    "https://media.discordapp.net/attachments/825547866134806540/825557836159123486/2.png",
+    "https://media.discordapp.net/attachments/825547866134806540/825557837362626560/3.png",
+    "https://media.discordapp.net/attachments/825547866134806540/825557838424047636/4.png",
+    "https://media.discordapp.net/attachments/825547866134806540/825557839702786088/5.png",
+    "https://media.discordapp.net/attachments/825547866134806540/825557841192157184/6.png"
+  ],
+  "objects-2": [
+    "https://media.discordapp.net/attachments/825547866134806540/825557040801775616/1.png",
+    "https://media.discordapp.net/attachments/825547866134806540/825557041837375488/2.png",
+    "https://media.discordapp.net/attachments/825547866134806540/825557043020431370/3.png",
+    "https://media.discordapp.net/attachments/825547866134806540/825557044491845652/4.png",
+    "https://media.discordapp.net/attachments/825547866134806540/825557045742403604/5.png",
+    "https://media.discordapp.net/attachments/825547866134806540/825557047252221973/6.png"
+  ],
+  "elements": [
+    "https://media.discordapp.net/attachments/825547866134806540/825556913763647498/1.png",
+    "https://media.discordapp.net/attachments/825547866134806540/825556954406846504/2.png",
+    "https://media.discordapp.net/attachments/825547866134806540/825556956004483112/3.png",
+    "https://media.discordapp.net/attachments/825547866134806540/825556957074817074/4.png",
+    "https://media.discordapp.net/attachments/825547866134806540/825556958714658866/5.png",
+    "https://media.discordapp.net/attachments/825547866134806540/825556960237715456/6.png"
+  ],
+  "transports": [
+    "https://media.discordapp.net/attachments/825547866134806540/825553680441802752/1.png",
+    "https://media.discordapp.net/attachments/825547866134806540/825553685555838976/2.png",
+    "https://media.discordapp.net/attachments/825547866134806540/825553687468179476/3.png",
+    "https://media.discordapp.net/attachments/825547866134806540/825553689795887124/4.png",
+    "https://media.discordapp.net/attachments/825547866134806540/825553691025080381/5.png",
+    "https://media.discordapp.net/attachments/825547866134806540/825553692602269727/6.png"
+  ],
+  "monsters": [
+    "https://media.discordapp.net/attachments/825547866134806540/825552247646978068/monster-1.png",
+    "https://media.discordapp.net/attachments/825547866134806540/825552250398048286/monster-2.png",
+    "https://media.discordapp.net/attachments/825547866134806540/825552252646850600/monster-3.png",
+    "https://media.discordapp.net/attachments/825547866134806540/825552254614372362/monster-4.png",
+    "https://media.discordapp.net/attachments/825547866134806540/825552256761331811/monster-5.png",
+    "https://media.discordapp.net/attachments/825547866134806540/825552258665414715/monster-6.png"
+  ]
+}
