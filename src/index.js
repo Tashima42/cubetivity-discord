@@ -7,6 +7,16 @@ require("dotenv").config()
 const Discord = require("discord.js")
 const client = new Discord.Client()
 
+const express = require('express')
+const app = express()
+const port = 3000
+
+app.get('/', (req, res) => {
+  res.send(":)")
+})
+
+app.listen(port, () => { })
+
 const selectImages = require("./helpers")
 
 const prefix = "]"
@@ -21,7 +31,7 @@ client.on('message', (msg) => {
   if (command == "roll") {
     const sendImages = selectImages()
     sendImages.forEach((image) => {
-      msg.reply(image)
+      msg.reply(image).catch((error) => console.error(error))
     })
   }
 })
