@@ -3,8 +3,10 @@ import randomHelper from "./random.js"
 const random = randomHelper()
 import createCollage from "nf-photo-collage"
 import fs from "fs"
-const baseDir = "./src/utils/images"
-const writeDir = "./src/utils/collages"
+import path from "path"
+const __dirname = path.resolve(path.dirname(''));
+const baseDir = __dirname + "/src/utils/images"
+const writeDir = __dirname + "/src/utils/collages"
 
 export default function () {
   function selectRandomImages() {

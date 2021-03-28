@@ -6,7 +6,7 @@ import discord from "./utils/discord.js"
 const client = discord()
 import images from "./utils/image.js"
 const imageHelper = images()
-import express, { json } from 'express'
+import express from 'express'
 import imgur from "./utils/imgur.js"
 const imgurHelper = imgur()
 
