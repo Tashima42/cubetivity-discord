@@ -11,7 +11,7 @@ import imgur from "./utils/imgur.js"
 const imgurHelper = imgur()
 
 const app = express()
-const port = 3000
+const port = process.env.PORT || 3000
 
 app.get('/', (req, res) => {
   res.send(":)")
