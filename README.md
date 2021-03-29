@@ -1,3 +1,3 @@
-# STORY CUBES DISCORD BOT
+# CUBETIVITY DISCORD BOT
 
-A simple bot to play Story Cubes with your friends!
+A simple bot to play with your friends!
